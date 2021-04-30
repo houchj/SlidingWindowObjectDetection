@@ -217,6 +217,21 @@ def is_centroid_in_window(x, y, box):
     y2 = box[3]
     return (x1 < x < x2) and (y1 < y < y2)
 
+#
+# # assume black background, return until it meets non-black pixel
+# def shrink_box_min(image, box):
+#     x1 = box[0]
+#     y1 = box[1]
+#     x2 = box[2]
+#     y2 = box[3]
+#     step = 2
+#     width = image.shape[1]
+#     height = image.shape[0]
+#     for x in range(x1, x2):
+#         for y in range(y1, y2):
+#             pixel =
+
+
 
 # %% 메인 함수
 def main():
